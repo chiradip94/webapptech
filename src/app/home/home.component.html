@@ -1,0 +1,11 @@
+    <div class="scene">
+      <div class="carousel">
+        <div *ngFor = "let post of Posts" class="carousel__cell">
+            {{ post.name }}
+        </div>
+      </div>
+    </div>
+    <p style="text-align: center;">
+      <button class="previous-button">Previous</button>
+      <button class="next-button">Next</button>
+    </p>

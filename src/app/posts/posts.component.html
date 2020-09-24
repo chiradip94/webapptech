@@ -1,0 +1,22 @@
+<!--<div class="side-nav2 side">
+<ul class = "navbar navbar-left">
+<li *ngFor = "let post of Posts" class="navbar-nav">
+    {{ post.name }}
+</li>
+</ul>
+</div>-->
+<script>$("#testLoad").load("{{selectedPost}}");</script>
+<div class="row text-white">
+    <div class="col-2 p-3">
+        <button *ngFor="let post of Posts" 
+            class="btn btn-sm bg-transparent btn-block btn-outline-light btn-secondary text-bold" (click)="changePost(post)" >
+            {{post.name}}
+        </button>
+    </div>
+
+    <div class="col-9 p-2 m-5">
+            <h2>{{postTitle}}</h2>
+            
+    </div>
+
+</div>
